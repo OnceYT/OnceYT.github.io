@@ -2,25 +2,91 @@
 layout: default
 ---
 
-<body>
-  <div class="loader"></div>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
   <u><h1>Steps Involved in MBO</h1></u>
-
   <p>Management by objectives is in effect a joint process of objectives setting and a joint appraisal or review of achievement or non-achievement by an executive or manager and his subordinate.</p>
-
   <h3>1. Clarification and review of the company's objectives by the top management.</h4>This implies that the objective might have been set in general terms perhaps by the board of directors. Then the top management must firstly understand clearly what the objectives may be.
-  
   <h3>2. Further clarification at the departmental level.</h3>This involves getting each department to know exactly what is expected to contribute towards the achievement of the corporate objective. This is necessary so as to maintain consistency between the departments and the entire organizational objectives.
-  
   <h3>3. Communication with the Employees.</h3>The manager or supervisor who is equally involved in the process will interview the subordinate or employee to discuss and clarify the purpose of the subordinates job, the key result he must achieve, and the performance standard expected of him to reach.
-  
   <h3>4. Creation of the Action Plan.</h3>Both of them, the manager and the subordinate will jointly agree on the action plan that the subordinate must follow in trying to reach the goal already set.
-  
   <h3>5. Supervising the flow of the Action Plan.</h3>The manager evolves a plan for control information to flow to him to enable him monitor the performance of the subordinate with reference to the agreed objectives. To do this effectively a review period must be set. For example, three or six months, etc.
-  
   <h3>6. Timely monitoring of the progress of the Action Plan.</h3>At the end of the review period set, both of them will meet again to discuss in a problem-solving manner and examine to what extent the subordinate is achieving his objective.
-  
   <h3>7. Working out of a solution for any problems.</h3>The manager will advise the subordinate on how to build on the strengths, and how to circumvent and overcome the weaknesses if any.
-  
   <h3>8. End Term review</h3>On the basis of what has been achieved so far - the key results, action plan, and performance standards will be agreed upon for the forthcoming period.
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
 </body>
+</html>
