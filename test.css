@@ -1,11 +1,22 @@
-#auth_icon{
-  width: 10%;
+.auth{
   border: 2px solid red;
   margin: auto;
+  width: 80%;
+}
+
+#auth_icon{
+  display: inline;
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid red;
 }
 
 #auth_text{
+  display: inline;
   border: 2px solid red;
   margin: auto;
   width: 670px;
+  vertical-align: top;
 }
