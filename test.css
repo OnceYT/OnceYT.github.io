@@ -2,8 +2,8 @@
   width: 10%;
 }
 
-.test{
+#auth_text{
   border: 2px solid red;
-  margin: 34px auto;
+  margin: auto;
   width: 670px;
 }
