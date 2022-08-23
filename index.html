@@ -1,25 +1,51 @@
 ---
 layout: default
 ---
-
 <!DOCTYPE html>
-<html lang="en">
-  <div class="loader"></div>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description", content="This is the description">
-    <meta name="robots", content="INDEX, FOLLOW">
-    <title>OnceYT's Webpage</title>
-    <link rel="stylesheet", href="styles.css">
-  </head>
-  <body>
-    <h3><strong>🚧 Webpage under construction.</strong></h3>
-    <br>
-    <h4>Meanwhile, you can ...</h4>
-    <ul>
-    <li>Contact me on <a href="https://discord.com/users/660445275890122763">Discord</a>, <a href="https://mail.google.com/mail/u/sahaa6919@gmail.com">Gmail</a>.</li>
-    <li>Check out my <a href="https://www.linkedin.com/in/anubhab-saha-83b5711bb">LinkedIn</a>.</li>
-    </ul>
-  </body>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
 </html>
