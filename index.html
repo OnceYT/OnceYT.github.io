@@ -15,12 +15,14 @@ layout: default
     <script src="typed.js"></script>
     
     <script>
-      var typed = new Typed(".auto-type", {
+      $('document').ready(function(){
+        var typed = new Typed(".auto-type", {
         strings = ["Test", "test"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
-      });
+      });   
+    });
     </script>
 
   </head>
