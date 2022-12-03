@@ -3,7 +3,7 @@
 
 <head>
   <link rel="stylesheet" href="style.css">
-  <script src="typed.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 </head>
 
 <body>
@@ -13,13 +13,12 @@
   </div>
    
   <script>
-    $(document).ready(function() {
-    var options = {
-    strings: ["hope", "family"],
-    typeSpeed: 40
-    }
-    var typed = new Typed("#type", options);
-    });
+    var typed = new Typed(".type", {
+    strings = ["a Test", "another Test"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true 
+  });
   </script>
 
 </body>
