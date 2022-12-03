@@ -8,19 +8,17 @@
 <body>
 
   <div class="container">
-    <p>This is a <span class="auto-type"></span></p>
+    <p>This is a <span class="type"></span></p>
   </div>
    
   <script src="typed.js"></script>
     
   <script>
-    $('document').ready(function(){
-      var typed = new Typed(".auto-type", {
-      strings = ["Test", "test"],
-      typeSpeed: 100,
-      backSpeed: 60,
-      loop: true
-    });   
+    var typed = new Typed(".type", {
+    strings = ["Test", "test"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true 
   });
   </script>
 
