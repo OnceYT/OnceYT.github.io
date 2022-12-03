@@ -9,18 +9,18 @@
 <body>
 
   <div class="container">
-    <h2>This is a <span class="type"></span></h2>
+    <h2>This is <span class="type"></span></h2>
   </div>
    
   <script>
-    var typed = new Typed(".type", {
-    strings = ["Test", "test"],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true 
-  });
+    $(document).ready(function() {
+    var options = {
+    strings: ["hope", "family"],
+    typeSpeed: 40
+    }
+    var typed = new Typed("#type", options);
+    });
   </script>
 
 </body>
-
 </html>
