@@ -1,13 +1,3 @@
-body{
-  margin: 0;
-  padding: 0;
-  background-image: url(oneplus_7_series_stock_2-2560x1440.jpg);
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  height: 100vh;
-}
-
 .container h2{
   position: absolute;
   top: 50%;
