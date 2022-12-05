@@ -1,5 +1,5 @@
 var typed = new Typed('#type', {
-  strings: ["fabulous", "lovely", "serene", "mesmerizing", "terrific", "great", "delightful", "magical", "wonderful", "awesome", "splendid", "gorgeous", "rewarding", "fine", "glorious", "royal"],
+  strings: ["fabulous", "lovely", "serene", "mesmerizing", "terrific", "great", "delightful", "magical", "wonderful", "awesome", "splendid", "gorgeous", "rewarding", "glorious", "royal"],
   typeSpeed: 150,
   backSpeed: 50,
   backDelay: 2200,
