@@ -1,3 +1,9 @@
+window.onload = function(){
+  var a = new Date().getDay();
+  const Days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  document.getElementById('day').innerHTML = Days[a]
+};
+
 var typed = new Typed('#type', {
   strings: ["fabulous", "lovely", "serene", "mesmerizing", "terrific", "great", "delightful", "magical", "wonderful", "awesome", "splendid", "gorgeous", "rewarding", "glorious", "royal"],
   typeSpeed: 150,
@@ -6,8 +12,3 @@ var typed = new Typed('#type', {
   loop: true,
 });
 
-window.onload = function(){
-  var a = new Date().getDay();
-  const Days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  document.getElementById('day').innerHTML = Days[a]
-};
