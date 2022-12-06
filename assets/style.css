@@ -128,7 +128,7 @@ body {
 .custom {
   position: absolute;
   opacity: 0;
-  top: 85%;
+  top: 95%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   display: flex;
