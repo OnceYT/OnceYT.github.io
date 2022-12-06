@@ -33,7 +33,6 @@ html {
 
 body {
   font-family: Urbanist;
-  overflow: hidden;
   background: var(--color-base);
   color: var(--color-primary);
   transition: all 400ms ease;
