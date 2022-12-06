@@ -32,17 +32,23 @@ html {
 }
 
 body {
-  font-family: 'Urbanist', sans-serif;
+  font-family: Urbanist;
+  overflow: hidden;
   background: var(--color-base);
   color: var(--color-primary);
   transition: all 400ms ease;
   line-height: 2;
   font-weight: 300;
+  animation: fadeIn 10s;
 }
 
 .hero{
+  position: absolute;
   width: 100%;
   height: 100vh;
+  min-height: 100vh;
+  align-self: center;
+  margin: 0;
   background-image: linear-gradient(rgba(0, 0, 0.1, 0.3),rgba(0, 0, 0.1, 0.3));
   position: relative;
   padding: 0 5%;
@@ -58,27 +64,13 @@ body {
   z-index: -1;
 }
 
-@media (min-aspect-ratio: 16/9){
-  .back-video{
-    width: 100%;
-    height: auto;
-    }
-}
-
-@media (max-aspect-ratio: 16/9){
-  .back-video{
-    width: auto;
-    height: 100%;
-    }
-}
-
 .container img {
   size: .5rem;
 }
 
 .container {
   position: absolute;
-  top: 48%;
+  top: 40%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   text-align: center;
@@ -136,13 +128,13 @@ body {
 .custom {
   position: absolute;
   opacity: 0;
-  top: 96%;
+  top: 80%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   display: flex;
   text-align: center;
   animation: fadeIn 6s;
-  animation-delay: 4.5s;
+  animation-delay: 5s;
   animation-fill-mode: forwards;
   -webkit-user-select: none;
   -ms-user-select: none;
