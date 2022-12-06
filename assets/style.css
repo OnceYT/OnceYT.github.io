@@ -38,6 +38,7 @@ body {
   transition: all 400ms ease;
   line-height: 2;
   font-weight: 300;
+  overflow: hidden;
   animation: fadeIn 10s;
 }
 
