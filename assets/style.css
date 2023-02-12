@@ -181,7 +181,7 @@ p, large {
 }
 
 h1 {
-  font-size: 7.8rem;
+  font-size: 0vw;
   line-height: 1.1;
   white-space: nowrap;
   transition: all 400ms ease;
