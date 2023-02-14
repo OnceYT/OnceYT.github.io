@@ -1,0 +1,4 @@
+Sitemap: https://onceyt.github.io/sitemap.xml
+
+User-agent: *
+Disallow:
