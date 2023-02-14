@@ -37,7 +37,7 @@ window.onload = function(){
   var dayNumber = new Date().getDay();
   const Days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   document.getElementById('day').innerHTML = Days[dayNumber]
-  const Greetings = ["Hello", "Hola", "Konnichiwa", "Bonjour", "Ni hao", "Ciao", "Salam", "Hallo", "Hoi", "Salut", "Ola", "Namaste"];
+  const Greetings = ["Hello!", "Hola!", "Konnichiwa!", "Bonjour!", "Ni hao!", "Ciao!", "Salam!", "Hallo!", "Hoi!", "Salut!", "Ola!", "Namaste!"];
   var randomGreeting = Greetings[Math.floor(Math.random() * Greetings.length)];
   document.getElementById('hello').innerHTML = randomGreeting
 };
