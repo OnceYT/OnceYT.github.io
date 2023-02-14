@@ -2,7 +2,7 @@ VANTA.FOG({
   el: ".bg",
   mouseControls: true,
   touchControls: true,
-  gyroControls: false,
+  gyroControls: true,
   minHeight: 200.00,
   minWidth: 200.00,
   highlightColor: 0x1a1e69,
@@ -11,7 +11,7 @@ VANTA.FOG({
   baseColor: 0x4fbccd,
   blurFactor: 0.3,
   speed: 0.5,
-  zoom: 0.45
+  zoom: 0.5
 });
 
 const toggleButton = document.querySelector("#sound-toggle");
