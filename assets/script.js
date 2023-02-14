@@ -6,7 +6,7 @@ VANTA.FOG({
   baseColor: 0x4fbccd,
   blurFactor: 0.3,
   speed: 0.5,
-  zoom: 0.5
+  zoom: 0.4
 });
 
 const toggleButton = document.querySelector("#sound-toggle");
