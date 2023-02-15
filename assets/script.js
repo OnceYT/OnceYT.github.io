@@ -25,7 +25,7 @@ toggleButton.addEventListener("click", function() {
 });
 
 var typed = new Typed('#type', {
-  strings: ["a fabulous", "a lovely", "a serene", "a mesmerizing", "a terrific", "a great", "a delightful", "a magical", "an wonderful", "an awesome", "a splendid", "a gorgeous", "a rewarding", "a glorious", "a royal", "a beautiful", "a tranquil", "an enchanted", "an uplifting", "an ecstatic"],
+  strings: ["a fabulous", "a lovely", "a serene", "a mesmerizing", "a terrific", "a great", "a delightful", "a magical", "an wonderful", "an awesome", "a chill", "a splendid", "a gorgeous", "a rewarding", "a glorious", "a royal", "a beautiful", "a tranquil", "an enchanted", "an uplifting", "an ecstatic"],
   typeSpeed: 150,
   backSpeed: 50,
   backDelay: 2260,
@@ -41,4 +41,3 @@ window.onload = function(){
   var randomGreeting = Greetings[Math.floor(Math.random() * Greetings.length)];
   document.getElementById('hello').innerHTML = randomGreeting
 };
-
