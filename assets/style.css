@@ -169,9 +169,9 @@ body {
   100% { opacity: 0.83; }
 }
 
-#nceyt, #about, #punc, #links, #intro, .bg{
+#nceyt, #about, #punc, #links, #intro, .bg, #sound-toggle {
   opacity: 0;
-  animation: fadeIn 4s;
+  animation: fadeIn 5s;
   animation-delay: 6s;
   animation-fill-mode: forwards;
 }
