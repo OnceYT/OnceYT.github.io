@@ -74,8 +74,8 @@ body {
 
 #sound-toggle {
   position: absolute;
-  color: white;
   opacity: 0.83;
+  color: white;
   top: 10px;
   left: 10px;
   font-size: 4.5vw;
@@ -176,7 +176,7 @@ body {
 
 #nceyt, #about, #punc, #links, #intro, #sound-toggle {
   opacity: 0;
-  animation: customfadeIn 5s;
+  animation: customFadeIn 5s;
   animation-delay: 6s;
   animation-fill-mode: forwards;
 }
