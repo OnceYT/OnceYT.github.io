@@ -86,10 +86,10 @@ body {
 }
 
 #sound-toggle:focus {
-    outline: none;
-    -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
-  }
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+}
 
 .container {
   position: absolute;
