@@ -52,10 +52,6 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: 0;
-  animation: fadeIn 5s;
-  animation-delay: 6s;
-  animation-fill-mode: forwards;
 }
 
 .hero{
@@ -74,7 +70,6 @@ body {
 
 #sound-toggle {
   position: absolute;
-  opacity: 0.83;
   color: white;
   top: 10px;
   left: 10px;
@@ -86,10 +81,10 @@ body {
 }
 
 #sound-toggle:focus {
-  outline: none;
-  -webkit-tap-highlight-color: transparent;
-  tap-highlight-color: transparent;
-}
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
+  }
 
 .container {
   position: absolute;
@@ -174,9 +169,9 @@ body {
   100% { opacity: 0.83; }
 }
 
-#nceyt, #about, #punc, #links, #intro, #sound-toggle {
+#nceyt, #about, #punc, #links, #intro, .bg{
   opacity: 0;
-  animation: customFadeIn 5s;
+  animation: fadeIn 4s;
   animation-delay: 6s;
   animation-fill-mode: forwards;
 }
