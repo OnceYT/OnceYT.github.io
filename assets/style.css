@@ -52,6 +52,10 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
+  opacity: 0;
+  animation: fadeIn 5s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
 }
 
 .hero{
@@ -170,9 +174,9 @@ body {
   100% { opacity: 0.83; }
 }
 
-#nceyt, #about, #punc, #links, #intro, .bg, #sound-toggle {
+#nceyt, #about, #punc, #links, #intro, #sound-toggle {
   opacity: 0;
-  animation: fadeIn 5s;
+  animation: customfadeIn 5s;
   animation-delay: 6s;
   animation-fill-mode: forwards;
 }
