@@ -71,6 +71,7 @@ body {
 #sound-toggle {
   position: absolute;
   color: white;
+  opacity: 0.83;
   top: 10px;
   left: 10px;
   font-size: 4.5vw;
