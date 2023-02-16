@@ -44,10 +44,6 @@ body {
 .main{
   height: 100%;
   width: 100%;
-  opacity: 0;
-  animation: customFadeIn 4s;
-  animation-delay: 6s;
-  animation-fill-mode: forwards;
 }
 
 .bg{
