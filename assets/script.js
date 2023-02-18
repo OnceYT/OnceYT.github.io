@@ -12,7 +12,6 @@ VANTA.FOG({
 const toggleButton = document.querySelector("#sound-toggle");
 let isSoundOn = false;
 const audioElement = new Audio("assets/media/playback.mp3");
-
 toggleButton.addEventListener("click", function() {
   if (isSoundOn) {
     toggleButton.innerHTML = '<i class="uil uil-volume-mute"></i>';
