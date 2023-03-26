@@ -53,8 +53,8 @@ body {
   bottom: 0;
   left: 0;
   opacity: 0;
-  animation: fadeIn 5s;
-  animation-delay: 6s;
+  animation: fadeIn 4.5s;
+  animation-delay: 5.5s;
   animation-fill-mode: forwards;
 }
 
@@ -176,15 +176,15 @@ body {
 
 #nceyt, #about, #punc, #links, #intro{
   opacity: 0;
-  animation: customFadeIn 4s;
-  animation-delay: 6s;
+  animation: customFadeIn 3.5s;
+  animation-delay: 5.5s;
   animation-fill-mode: forwards;
 }
 
 #O{
   opacity: 0;
   color: #03f8fc;
-  animation: flicker 5s;
+  animation: flicker 4.5s;
   animation-delay: 1s;
   animation-fill-mode: forwards;
 }
