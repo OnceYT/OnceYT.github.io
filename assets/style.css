@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   border: 0;
-  outline: 0;
+  outline-color: none;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
@@ -46,16 +46,37 @@ body {
   width: 100%;
 }
 
-.bg{
+#bg {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   opacity: 0;
+}
+
+.background-reveal {
   animation: fadeIn 4.5s;
-  animation-delay: 5.5s;
+  animation-delay: 6.5s;
   animation-fill-mode: forwards;
+}
+
+.background-animate {
+  animation: reveal 1s;
+  opacity: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .hero{
@@ -75,8 +96,9 @@ body {
 #sound-toggle {
   position: absolute;
   color: white;
+  opacity: 0;
   top: 10px;
-  left: 10px;
+  left: -60px;
   font-size: 4.5vw;
   padding: 10px 20px;
   background-color: transparent;
@@ -84,11 +106,128 @@ body {
   cursor: pointer;
 }
 
+.sound-toggle-reveal {
+  animation: sound-toggle-reveal-animation 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes sound-toggle-reveal-animation {
+  0% {
+    opacity: 0;
+    scale: 0.5;
+  }
+  100% {
+    transform: translateX(70px);
+    opacity: 0.83;
+    scale: 1;
+  }
+}
+
 #sound-toggle:focus {
-    outline: none;
+    outline-color: transparent;
     -webkit-tap-highlight-color: transparent;
     tap-highlight-color: transparent;
   }
+
+.sound-toggle-click-animate {
+  animation-name: sound-toggle-click-animation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+@keyframes sound-toggle-click-animation {
+  0% {
+    transform: translateX(0);
+    opacity: 0.83;
+    scale: 1;
+  }
+  20% {
+    transform: translateX(20px);
+    opacity: 0.83;
+    scale: 1;
+  }
+  50% {
+    transform: translateX(-70px);
+    opacity: 0;
+    scale: 0.5;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 0.83;
+    scale: 1;
+  }
+}
+
+#color-mode-toggle {
+  position: absolute;
+  color: white;
+  opacity: 0;
+  top: -50px;
+  left: 80px;
+  font-size: 4.5vw;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.color-mode-toggle-reveal {
+  animation: color-mode-toggle-reveal-animation 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 6s;
+}
+
+@keyframes color-mode-toggle-reveal-animation {
+  0% {
+    opacity: 0;
+    scale: 0.5;
+  }
+  100% {
+    transform: translateY(60px);
+    opacity: 0.83;
+    scale: 1;
+  }
+}
+
+#color-mode-toggle:focus {
+    outline-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
+}
+
+.color-mode-toggle-click-animate {
+  animation-name: color-mode-toggle-click-animation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+@keyframes color-mode-toggle-click-animation {
+  0% {
+    transform: translateY(0);
+    opacity: 0.83;
+    scale: 1;
+  }
+  20% {
+    transform: translateY(20px);
+    opacity: 0.83;
+    scale: 1;
+  }
+  50% {
+    transform: translateY(-60px);
+    opacity: 0;
+    scale: 0.5
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 0.83;
+    scale: 1;
+  }
+}
 
 .container {
   position: absolute;
@@ -119,18 +258,54 @@ body {
   font-size: 7.8rem;
   line-height: 1.1;
   white-space: nowrap;
+  opacity: 0;
   transition: all 400ms ease;
-  color: transparent;
   background: url(media/back-anim.png);
   -webkit-text-stroke: 4.7px #fff;
   -webkit-background-clip: text;
   background-position: 0 0;
-  animation: back 60s linear infinite none, fadeIn 5s 1 forwards;
-  animation-delay: 5s, 6s;
+  animation: back 60s linear infinite none, customFadeIn 3s 1 forwards, nceYTBackFadeIn 1s 1 forwards;
+  animation-delay: 7.5s, 4.5s, 8s;
 }
 
 @keyframes back{
   100%{ background-position: 2000px 0; }
+}
+
+@keyframes nceYTBackFadeIn {
+  100% {
+    color: transparent;
+  }
+}
+
+.container #nceYT-underline {
+  bottom: 0;
+  left: 0;
+  width: 92%;
+  height: 0.5px;
+  padding: none;
+  margin: none;
+  opacity: 1;
+  border-radius: 60px;
+  outline: 0;
+  transform-origin: left;
+  transform: scaleX(0);
+  background-color: white;
+  animation: underline-anim 2.5s forwards;
+  animation-delay: 4.5s;
+}
+
+@keyframes underline-anim {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(0.5);
+  }
+  100% {
+    transform-origin: right;
+    transform: scaleX(0);
+  }
 }
 
 .container #about {
@@ -165,23 +340,31 @@ body {
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes customFadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 0.83; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.83;
+  }
 }
 
-#nceyt, #about, #punc, #links, #intro{
+#about, #punc, #links, #intro{
   opacity: 0;
   animation: customFadeIn 3.5s;
-  animation-delay: 5.5s;
+  animation-delay: 6.5s;
   animation-fill-mode: forwards;
 }
 
-#O{
+#O {
   opacity: 0;
   color: #03f8fc;
   animation: flicker 4.5s;
