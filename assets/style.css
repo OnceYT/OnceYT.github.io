@@ -282,7 +282,7 @@ body {
   bottom: 0;
   left: 0;
   width: 92%;
-  height:1px;
+  height:5px;
   padding: none;
   margin: none;
   opacity: 1;
@@ -291,7 +291,7 @@ body {
   transform-origin: left;
   transform: scaleX(0);
   background-color: white;
-  animation: underline-anim 2.5s forwards;
+  animation: underline-anim 2.6s forwards;
   animation-delay: 4.5s;
 }
 
@@ -302,9 +302,13 @@ body {
   50% {
     transform: scaleX(0.5);
   }
-  100% {
+  90% {
     transform-origin: right;
     transform: scaleX(0);
+    height: 5px;
+  }
+  100% {
+    height: 1px;
   }
 }
 
