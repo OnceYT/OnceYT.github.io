@@ -30,22 +30,25 @@
 
   <body>
     <div class="main">
-
-      <div class="bg"></div>
+      <div id = 'bg' class="background-reveal"></div>
 
       <div class="hero">   
-        <button id="sound-toggle" title="Toggle Music">
+        <button id="sound-toggle" title="Toggle music" class='sound-toggle-reveal'>
           <i class="uil uil-volume-mute"></i>
         </button>
-      </div>  
+        <button id="color-mode-toggle" title="Toggle Light/Dark mode" class='color-mode-toggle-reveal'>
+          <i id='colorModeButton', class="uil uil-sun"></i>
+        </button>
+      </div>
       
       <main>
         <div class="container">
           <div id="intro"><h4><span id="hello"></span> I'm</h4></div>
           <h1><span id="O">O</span><span id="nceyt">nceYT</span><span id="punc">.</span></h1>
-          <div id="about"><p><pre>I'm a second year business student who loves coding<br>and making things. Fancy a chat?</pre></p></div>
+          <div id='nceYT-underline'></div>
+          <div id="about"><p><pre>I'm a second year business student who loves gaming,<br>coding and making things. Fancy a chat?</pre></p></div>
           <span id="links">
-            <a href="https://youtube.com/@0nceyt" target="_blank" aria-label="YouTube"><i class="uil uil-youtube"></i></a>
+            <a href="https://youtube.com/@Onceyt." target="_blank" aria-label="YouTube"><i class="uil uil-youtube"></i></a>
             <a href="https://discordapp.com/users/660445275890122763" target="_blank" aria-label="Discord"><i class="uil uil-discord"></i></a>
             <a href="https://github.com/OnceYT" target="_blank" aria-label="Github"><i class="uil uil-github"></i></a>
             <a href="mailto:sahaa6919@gmail.com" target="_blank" aria-label="Mail"><i class="uil uil-envelope"></i></a>
@@ -56,10 +59,8 @@
       <div class="custom">
         <h3>Hope you're having <span id="type"></span> <span id="day"></span>.</h3>
       </div>
-
     </div>
-    
-    <script src="assets/script.js"></script>   
+    <script src="assets/script.js"></script>
   </body>
 
 </html>
