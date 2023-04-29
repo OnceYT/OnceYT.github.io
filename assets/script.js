@@ -8,6 +8,11 @@ function isDarkModeEnabled() {
         setTimeout(function () {
             vanta = VANTA.FOG({
                 el: "#bg",
+                mouseControls: false,
+                touchControls: false,
+                gyroControls: false,
+                scale: 8,
+                scaleMobile: 12,
                 highlightColor: 0x313130,
                 midtoneColor: 0xbababa,
                 lowlightColor: 0x3c3c3e,
@@ -23,6 +28,11 @@ function isDarkModeEnabled() {
         setTimeout(function () {
             vanta = VANTA.FOG({
                 el: "#bg",
+                mouseControls: false,
+                touchControls: false,
+                gyroControls: false,
+                scale: 8,
+                scaleMobile: 12,
                 highlightColor: 0x1a1e69,
                 midtoneColor: 0xf385c,
                 lowlightColor: 0x146b6b,
