@@ -11,8 +11,8 @@ function isDarkModeEnabled() {
                 mouseControls: false,
                 touchControls: false,
                 gyroControls: false,
-                scale: 6,
-                scaleMobile: 10,
+                scale: 4,
+                scaleMobile: 8,
                 highlightColor: 0x313130,
                 midtoneColor: 0xbababa,
                 lowlightColor: 0x3c3c3e,
@@ -31,8 +31,8 @@ function isDarkModeEnabled() {
                 mouseControls: false,
                 touchControls: false,
                 gyroControls: false,
-                scale: 6,
-                scaleMobile: 10,
+                scale: 4,
+                scaleMobile: 8,
                 highlightColor: 0x1a1e69,
                 midtoneColor: 0xf385c,
                 lowlightColor: 0x146b6b,
@@ -111,6 +111,20 @@ toggleSoundButton.addEventListener("click", function() {
   isSoundOn = !isSoundOn;
 });
 
+var fps = document.getElementById("fps-counter");
+var startTime = Date.now();
+var frame = 0;
+function tick() {
+  var time = Date.now();
+  frame++;
+  if (time - startTime > 1000) {
+      fps.innerHTML = Math.round(frame / ((time - startTime) / 1000).toFixed(1));
+      startTime = time;
+      frame = 0;
+	}
+  window.requestAnimationFrame(tick);
+};
+
 var typed = new Typed('#type', {
   strings: ["a fabulous", "a lovely", "a bountiful", "a serene", "a mesmerizing", "a terrific", "a great", "a delightful", "a magical", "an wonderful", "an awesome", "a chill", "a splendid", "a gorgeous", "a rewarding", "a glorious", "a royal", "a beautiful", "a tranquil", "an enchanted", "an uplifting", "an ecstatic"],
   typeSpeed: 150,
@@ -129,4 +143,5 @@ window.onload = function(){
   document.getElementById('hello').innerHTML = randomGreeting
 };
 
-isDarkModeEnabled()
+isDarkModeEnabled();
+tick();
