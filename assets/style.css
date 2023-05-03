@@ -41,7 +41,7 @@ body {
   font-weight: 300;
 }
 
-.main{
+.main {
   height: 100%;
   width: 100%;
 }
@@ -79,7 +79,7 @@ body {
   }
 }
 
-.hero{
+.hero {
   width: 100%;
   height: 100vh;
   min-height: 100vh;
@@ -154,7 +154,7 @@ body {
     opacity: 0;
     scale: 0.5;
   }
-  100%{
+  100% {
     transform: translateX(0);
     opacity: 0.83;
     scale: 1;
@@ -282,7 +282,7 @@ body {
   animation-delay: 7.5s, 4.5s, 8s;
 }
 
-@keyframes back{
+@keyframes back {
   100%{ background-position: 2000px 0; }
 }
 
@@ -376,7 +376,7 @@ body {
   }
 }
 
-#about, #punc, #links, #intro{
+#about, #punc, #links, #intro {
   opacity: 0;
   animation: customFadeIn 3.5s;
   animation-delay: 6.5s;
