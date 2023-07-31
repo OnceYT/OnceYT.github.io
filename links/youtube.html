@@ -1,9 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="1;url=https://youtube.com/@Onceyt.">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="reresh" content="1;url=https://youtube.com/@Onceyt.">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
 </head>
+
 <body>
-  <h1>Redirecting Shortly...</h1>
+  <div class='bg'></div>
+  <div class='content'>
+    <img src="/assets/media/logo.png" alt="OnceYT Logo" class="logo-image">
+    
+    <h1>🔗 Redirecting Shortly...</h1>
+  </div>
 </body>
+
+<style>
+  body {
+    font-family: Urbanist;
+    line-height: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .content {
+    padding: 20px; /* Adding some padding for better visibility */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.8s ease-in;
+    animation-fill-mode: forwards;
+  }
+
+  .logo-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Set the border-radius to 50% for a circular mask */
+  }
+
+  @keyframes fadeIn {
+    from { font-size: 100%; } /* Start with 100% font size */
+    to { font-size: 180%; } /* End with 200% font size */
+  }
+</style>
+
+<script>
+VANTA.GLOBE({
+  el: "body",
+  mouseControls: false,
+  touchControls: false,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 2.00,
+  scaleMobile: 2.00,
+  color: 0x338591,
+  color2: 0x70707,
+  size: 0.5,
+  backgroundColor: 0xfafafa
+})
+</script>
+
 </html>
