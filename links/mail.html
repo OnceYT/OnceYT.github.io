@@ -4,8 +4,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="refresh" content="1.5;url=mailto:sahaa6919@gmail.com">
-  <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
-  <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800;900&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'" crossorigin="anonymous">
+  <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" crossorigin="anonymous">
+  <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
 </head>
 
 <body>
@@ -45,6 +46,10 @@
   .logo-container {
     display: flex;
     align-items: center;
+    opacity: 0;
+    animation: fadeIn 0.7s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
   }
 
   .logo-image {
@@ -59,20 +64,25 @@
   }
 
   .logo-icon {
-    font-size: 180px;
+    font-size: 170px;
     color: #FF0000;
   }
-
+  
   .spinner-container {
     font-size: 50px;
     margin-right: 20px;
-    animation: fadeIn 0.7s ease-in;
+    animation: zoomIn 0.7s ease-in;
     animation-fill-mode: forwards;
   }
 
-  @keyframes fadeIn {
-    from { font-size: 100%; }
+  @keyframes zoomIn {
+    from { font-size: 125%; }
     to { font-size: 160%; }
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
   }
 </style>
 
