@@ -89,6 +89,7 @@ toggleColorButton.addEventListener("click", function() {
 const toggleSoundButton = document.querySelector("#sound-toggle");
 let isSoundOn = false;
 const audioElement = new Audio("assets/media/playback.mp3");
+audioElement.loop = true;
 toggleSoundButton.addEventListener("click", function() {
   toggleSoundButton.style.opacity = 0.83;
   toggleSoundButton.style.left = '10px';
