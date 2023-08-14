@@ -3,7 +3,7 @@
   
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta http-equiv="refresh" content="2;url=https://youtube.com/@Onceyt.">
+  <meta http-equiv="reresh" content="2;url=https://youtube.com/@Onceyt.">
   <meta name="description", content="Custom redirect to OnceYT's social accounts and places to connect on.">
   <meta name="robots", content="INDEX, FOLLOW">
   <meta name="theme-color" content="#03f8fc">
@@ -26,9 +26,12 @@
 </head>
 
 <body>
- <div class='header'>
-   <img src="/assets/media/logo.png" alt="OnceYT Logo" class="logo-header"><h1>OnceYT</h1><p><span id="header-span1">.live</span><span id="header-span2">/links</span><span id="header-span3">/youtube</span></p>
- </div>
+  <div class='header'>
+    <img src="/assets/media/logo.png" alt="OnceYT Logo" class="logo-header"><h1>OnceYT</h1><p><span id="header-span1">.live</span><span id="header-span2">/links</span><span id="header-span3">/youtube</span></p>
+    <button id='exit' title='Exit Redirect'>
+      <i class='uil uil-signout'></i>
+    </button>
+  </div>
   
   <div class='content'>
     <div class="logo-container">
@@ -115,6 +118,28 @@
     100% {transform: translateX(0px); opacity: 1;}
   }
   
+  #exit {
+    position: absolute;
+    height: 100%;
+    width: 8%;
+    top: 0px;
+    right: -70px;
+    opacity: 0;
+    padding-right: 85px;
+    font-size: 7vw;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    animation: exitReveal 2s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+  }
+  
+  @keyframes exitReveal {
+    0% {scale: 0;}
+    100% {transform: translateX(-70px); opacity: 0.8; scale: 1;}
+  }
+    
   .content {
     padding: 20px;
     display: flex;
@@ -198,6 +223,11 @@
 </style>
 
 <script>
+  const exitButton = document.getElementById('exit');
+  exitButton.addEventListener('click', function() {
+    window.location.href = 'test'
+  });
+  
   function isDarkModeEnabled() {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       document.body.style.backgroundColor = '#111111';
@@ -206,6 +236,7 @@
       document.querySelector('.header').style.color = '#CCCCCC';
       document.querySelector('.header p').style.opacity = 0.5;
       document.querySelector('.header').style.boxShadow = '0px 2px 4px rgba(255, 255, 255, 0.1)';
+      document.querySelector('#exit').style.color = '#CCCCCC';
       document.querySelector('.multiply-symbol').style.color = '#FFFFFF';
       document.querySelector('.logo-icon').style.color = '#CCCCCC';
       document.querySelector('.logo-image').style.outline = '3px solid rgba(255, 255, 255, 0.3)';
