@@ -16,11 +16,13 @@ VANTA.FOG({
   zoom: 0.30
 });
 
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    console.log('mobile');
+    document.body.classList.add('mobile-device');
+}
 
 const script = document.createElement("script");
-
 script.src = "https://kit.fontawesome.com/1ee8f271b9.js";
-
 document.body.appendChild(script);
 
 let start = new Date().getTime();
