@@ -97,10 +97,11 @@ body {
 .photos {
   position: absolute;
   top: 48%;
-  left: 50%;
+  left: 38%;
   transform: translate(-50%, -50%);
   margin: 0;
   padding: 0;
+  scale: 60%;
   font-family: poppins, sans-serif;
   background: transparent;
 }
