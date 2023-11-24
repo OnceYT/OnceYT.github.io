@@ -45,7 +45,6 @@ body {
   text-align: center;
   color: #fff;
   background: transparent;
-  outline: 2px solid red;
   align-items: center;
 }
 
@@ -101,7 +100,6 @@ body {
 
 .main-nav {
   position: relative;
-  outline: 2px solid white;
   top: 300%;
   scale: 0.5;
   margin: 0 auto;
@@ -204,8 +202,23 @@ body {
   background-position: center;
 }
 
+.mobile-device .main-nav {
+  scale: 0.9;
+  top: 250%;
+}
 
+.mobile-device .text {
+  top: 20%;
+}
 
+.mobile-device .text p {
+  scale: 1;
+  top: 700%;
+}
+
+.mobile-device .text h2 {
+  scale: 1;
+}
 
 :root {
   --glow-rgb: 239 42 201;
@@ -276,4 +289,4 @@ body {
     transform: translate(20px, 120px) rotateX(-180deg) rotateY(-90deg) scale(0.5);
     opacity: 0;
   }
-  }
+}
