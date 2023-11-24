@@ -35,7 +35,7 @@ body {
   position: absolute;
   margin: 0;
   padding: 0;
-  top: 10%;
+  top: 5%;
   left: 50%;
   width: 100%;
   line-height: 1.2;
@@ -101,7 +101,7 @@ body {
   transform: translate(-50%, -50%);
   margin: 0;
   padding: 0;
-  scale: 60%;
+  scale: 50%;
   font-family: poppins, sans-serif;
   background: transparent;
 }
