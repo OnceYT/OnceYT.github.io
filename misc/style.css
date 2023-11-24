@@ -95,14 +95,19 @@ body {
 }
 
 .photos {
-  position: absolute;
-  top: 48%;
-  left: 28%;
-  margin: 0;
+  position: fixed;
+  outline: 2px solid white;
+  display: flex;
+  justify-content: center;
+  top: 40%;
+  left: 0%;
+  margin: 0 auto;
   padding: 0;
-  scale: 40%;
+  scale: 60%;
+  transform: translate(50%, 50%);
   font-family: poppins, sans-serif;
   background: transparent;
+  z-index: -1;
 }
 
 .main-nav {
