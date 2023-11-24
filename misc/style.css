@@ -95,28 +95,27 @@ body {
 }
 
 .photos {
-  position: fixed;
-  outline: 2px solid white;
-  display: flex;
-  justify-content: center;
-  top: 40%;
-  left: 0%;
-  margin: 0 auto;
+  position: absolute;
+  margin: 0;
   padding: 0;
-  scale: 60%;
-  transform: translate(50%, 50%);
-  font-family: poppins, sans-serif;
+  top: 40%;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
   background: transparent;
-  z-index: -1;
 }
 
 .main-nav {
+  position: relative;
+  scale: 0.7;
+  left: 19%;
   margin: 0;
   padding: 0;
   width: 600px;
   height: 50px;
   background: transparent;
 }
+
 
 .main-nav li{
   list-style: none;
