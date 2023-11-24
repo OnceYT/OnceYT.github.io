@@ -35,15 +35,17 @@ body {
   position: absolute;
   margin: 0;
   padding: 0;
-  top: 8%;
+  top: 10%;
   left: 50%;
-  width: 100%;
+  width: 70%;
+  height: 8%;
   line-height: 1.2;
   font-family: 'Urbanist';
   transform: translateX(-50%);
   text-align: center;
   color: #fff;
   background: transparent;
+  outline: 2px solid red;
 }
 
 #hbd {
@@ -95,11 +97,11 @@ body {
 }
 
 .main-nav {
-  position: absolute;
-  outline: 2px solid yellow;
-  top: 30%;
+  position: relative;
+  outline: 2px solid white;
+  top: 350%;
   scale: 0.8;
-  left: 20%;
+  left: 5vw;
   margin: 0;
   padding: 0;
   width: 600px;
@@ -201,6 +203,8 @@ body {
 }
 
 
+
+
 :root {
   --glow-rgb: 239 42 201;
 }
@@ -270,4 +274,4 @@ body {
     transform: translate(20px, 120px) rotateX(-180deg) rotateY(-90deg) scale(0.5);
     opacity: 0;
   }
-}
+    }
