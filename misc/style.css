@@ -56,6 +56,7 @@ body {
 
 .text h2 {
   padding: 0;
+  scale: 0.9;
   margin: 0;
   font-size: 450%;
   color: #ffbbdd;
@@ -87,7 +88,7 @@ body {
 .text p {
   position: absolute;
   top: 890%;
-  scale: 0.8;
+  scale: 0.6;
   background: transparent;
   padding: 0;
   margin-top: 20px;
@@ -101,7 +102,7 @@ body {
 .main-nav {
   position: relative;
   outline: 2px solid white;
-  top: 340%;
+  top: 320%;
   scale: 0.5;
   margin: 0 auto;
   padding: 0;
