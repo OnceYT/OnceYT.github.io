@@ -58,8 +58,8 @@ body {
   position: absolute;
   margin: 0;
   padding: 0;
-  margin-left: -23%;
-  margin-top: 40%;
+  /*margin-left: -23%;
+  margin-top: 40%;*/
   top: 5%;
   left: 50%;
   width: 100%;
@@ -71,7 +71,7 @@ body {
   color: #fff;
   background: transparent;
   align-items: center;
-  animation: shift 3s 11.5s ease forwards;
+  /*animation: shift 3s 11.5s ease forwards;*/
 }
 
 @keyframes shift {
