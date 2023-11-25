@@ -55,13 +55,10 @@ body {
 }
 
 .text {
-  outline: 2px solid yellow;
   position: absolute;
   margin: 0;
   padding: 0;
-  /*margin-left: -23%;
-  margin-top: 40%;*/
-  top: -20%;
+  top: 5%;
   left: 50%;
   width: 100%;
   height: 8%;
@@ -72,7 +69,6 @@ body {
   color: #fff;
   background: transparent;
   align-items: center;
-  /*animation: shift 3s 11.5s ease forwards;*/
 }
 
 @keyframes shift {
@@ -139,8 +135,8 @@ body {
 
 .main-nav {
   position: relative;
-  top: 270%;
-  scale: 0.2;
+  top: 280%;
+  scale: 0.5;
   margin: 0 auto;
   padding: 0;
   width: 600px;
@@ -258,7 +254,7 @@ body {
 }
 
 .mobile-device .text {
-  top: 20%;
+  top: -10%;
 }
 
 .mobile-device .text p {
