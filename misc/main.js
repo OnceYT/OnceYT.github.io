@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll('#tiny').forEach(function(element) {
       element.style.animation = 'animateGradient 5s linear infinite';
     });
-  }, 14000);
+  }, 12000);
 });
 
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
