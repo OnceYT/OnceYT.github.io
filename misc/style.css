@@ -55,6 +55,7 @@ body {
 }
 
 .text {
+  outline: 2px solid white;
   position: absolute;
   margin: 0;
   padding: 0;
