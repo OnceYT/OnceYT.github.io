@@ -55,7 +55,7 @@ body {
 }
 
 .text {
-  outline: 2px solid red;
+  outline: 2px solid yellow;
   position: absolute;
   margin: 0;
   padding: 0;
@@ -125,7 +125,7 @@ body {
 
 .text p {
   position: absolute;
-  top: 890%;
+  top: 900%;
   scale: 0.5;
   background: transparent;
   padding: 0;
@@ -139,8 +139,8 @@ body {
 
 .main-nav {
   position: relative;
-  top: 280%;
-  scale: 0.3;
+  top: 270%;
+  scale: 0.2;
   margin: 0 auto;
   padding: 0;
   width: 600px;
