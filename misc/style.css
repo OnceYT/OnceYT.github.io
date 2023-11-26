@@ -55,7 +55,6 @@ body {
 
 .text {
   position: absolute;
-  outline: 2px solid yellow;
   margin: 0;
   padding: 0;
   top: 2%;
@@ -135,7 +134,7 @@ body {
 
 .main-nav {
   position: relative;
-  top: 260%;
+  top: 240%;
   scale: 0.5;
   margin: 0 auto;
   padding: 0;
