@@ -121,13 +121,13 @@ body {
 
 .levelUp {
   position: relative;
-  outline: 2px solid white;
+  scale: 2;
   top: 170%;
   opacity: 1;
   padding: none;
   margin: none;
   height: 300%;
-  anmation: displayIn 1s 11.5s ease-in-out forwards, displayOut 1s 14s ease-in-out forwards;
+  animation: displayIn 1s 11.5s ease-in-out forwards, displayOut 1s 14s ease-in-out forwards;
 }
 
 #intro-video {
@@ -307,6 +307,10 @@ body {
   background-position: center;
   transform: rotate(-45deg);
   scale: 1.4;
+}
+
+.mobile-device .levelUp {
+  scale: 1;
 }
 
 .mobile-device .main-nav {
