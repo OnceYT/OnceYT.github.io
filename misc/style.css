@@ -92,7 +92,6 @@ body {
   scale: 0.9;
   margin: 0;
   font-size: 450%;
-  fon-size: clamp(2rem, 8vw, 8rem);
   color: #ffbbdd;
   background: transparent;
 }
@@ -127,6 +126,7 @@ body {
   padding: none;
   margin: none;
   height: 300%;
+  overflow: hidden;
   animation: displayIn 1s 11.5s ease-in-out forwards, displayOut 1s 14s ease-in-out forwards;
 }
 
@@ -311,6 +311,10 @@ body {
 
 .mobile-device .levelUp {
   scale: 1;
+}
+
+.mobile-device #intro-video {
+  scale: 1.5;
 }
 
 .mobile-device .main-nav {
