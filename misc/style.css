@@ -121,12 +121,13 @@ body {
 
 .levelUp {
   position: relative;
+  outline: 2px solid white;
   top: 170%;
-  opacity: 0;
+  opacity: 1;
   padding: none;
   margin: none;
   height: 300%;
-  animation: displayIn 1s 11.5s ease-in-out forwards, displayOut 1s 14s ease-in-out forwards;
+  anmation: displayIn 1s 11.5s ease-in-out forwards, displayOut 1s 14s ease-in-out forwards;
 }
 
 #intro-video {
