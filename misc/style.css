@@ -84,7 +84,7 @@ body {
 
 #hbd {
   background: transparent;
-  animation: fadeIn 3.5s 13.5s ease forwards;
+  animation: fadeIn 3.5s 10.5s ease forwards;
 }
 
 .text h2 {
@@ -92,6 +92,7 @@ body {
   scale: 0.9;
   margin: 0;
   font-size: 450%;
+  fon-size: clamp(2rem, 8vw, 8rem);
   color: #ffbbdd;
   background: transparent;
 }
@@ -121,15 +122,22 @@ body {
 .levelUp {
   position: relative;
   top: 170%;
+  opacity: 0;
   padding: none;
   margin: none;
   height: 300%;
-  animation: displayOut 1s 3s ease-in-out forwards;
+  animation: displayIn 1s 11.5s ease-in-out forwards, displayOut 1s 14s ease-in-out forwards;
 }
 
 #intro-video {
   height: 100%;
   width: 100%;
+}
+
+@keyframes displayIn {
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes displayOut {
