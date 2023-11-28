@@ -1,4 +1,3 @@
-
 var element = document.getElementById("tiny");
 function changeContent() {
   setTimeout(function() {
@@ -28,7 +27,7 @@ function changeContent() {
         }, 2000);
       }, 2000);
     }, 2000);
-  }, 4000);
+  }, 1000);
 }
 
 function fadeOut() {
@@ -52,9 +51,8 @@ function fadeOut() {
         }, 2000);
       }, 2000);
     }, 2000);
-  }, 3800);
+  }, 800);
 }
-
 
 document.addEventListener("DOMContentLoaded", function() {
   changeContent();
@@ -82,6 +80,11 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
     console.log('mobile');
     document.body.classList.add('mobile-device');
 }
+
+const introVideo = document.getElementById('intro-video');
+setTimeout(function() {
+  introVideo.play();
+}, 12000);
 
 VANTA.FOG({
   el: ".background",
