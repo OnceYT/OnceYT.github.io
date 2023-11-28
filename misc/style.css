@@ -84,7 +84,7 @@ body {
 
 #hbd {
   background: transparent;
-  animation: fadeIn 3.5s 10.5s ease forwards;
+  animation: fadeIn 3.5s 13.5s ease forwards;
 }
 
 .text h2 {
@@ -118,6 +118,27 @@ body {
   }
 }
 
+.levelUp {
+  position: relative;
+  top: 170%;
+  padding: none;
+  margin: none;
+  height: 300%;
+  animation: displayOut 1s 3s ease-in-out forwards;
+}
+
+#intro-video {
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes displayOut {
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
 .text p {
   position: absolute;
   top: 900%;
@@ -129,7 +150,7 @@ body {
   margin-right: 0;
   width: 100%;
   font-size: 200%;
-  animation: fadeIn 3.5s 14.2s ease forwards;
+  animation: fadeIn 3.5s 17.2s ease forwards;
 }
 
 .main-nav {
@@ -164,6 +185,7 @@ body {
   box-shadow: 2px 2px 100px rgba(0,0,1);
 }
 
+
 @keyframes test {
   0% {
     opacity: 0;
@@ -186,42 +208,42 @@ body {
   opacity: 0;
   top: -100%;
   left: 0%;
-  animation: test 1s 13.4s ease forwards;
+  animation: test 1s 16.4s ease forwards;
 }
 
 .main-nav li.item2{
   opacity: 0;
   bottom: -100%;
   left: 25%;
-  animation: test 1s 13.6s ease forwards;
+  animation: test 1s 16.6s ease forwards;
 }
 
 .main-nav li.item3{
   opacity: 0;
   top: -100%;
   left: 50%;
-  animation: test 1s 13.8s ease forwards;
+  animation: test 1s 16.8s ease forwards;
 }
 
 .main-nav li.item4{
   opacity: 0;
   bottom: -100%;
   left: 75%;
-  animation: test 1s 14s ease forwards;
+  animation: test 1s 17s ease forwards;
 }
 
 .main-nav li.item5{
   opacity: 0;
   top: -100%;
   left: 100%;
-  animation: test 1s 14.2s ease forwards;
+  animation: test 1s 17.2s ease forwards;
 }
 
 .main-nav li.item6{
   opacity: 0;
   top: 500%;
   left: 50%;
-  animation: test 1s 13.9s ease forwards;
+  animation: test 1s 16.9s ease forwards;
 }
 
 .main-nav li .bg{
