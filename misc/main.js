@@ -84,7 +84,7 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
 const introVideo = document.getElementById('intro-video');
 setTimeout(function() {
   introVideo.play();
-}, 12000);
+}, 11800);
 
 VANTA.FOG({
   el: ".background",
