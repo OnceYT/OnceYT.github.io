@@ -1,3 +1,4 @@
+
 var element = document.getElementById("tiny");
 function changeContent() {
   setTimeout(function() {
@@ -27,7 +28,7 @@ function changeContent() {
         }, 2000);
       }, 2000);
     }, 2000);
-  }, 1000);
+  }, 4000);
 }
 
 function fadeOut() {
@@ -51,7 +52,7 @@ function fadeOut() {
         }, 2000);
       }, 2000);
     }, 2000);
-  }, 800);
+  }, 3800);
 }
 
 
@@ -67,14 +68,14 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll('#tiny').forEach(function(element) {
       element.style.animation = 'animateGradient 5s linear infinite';
     });
-  }, 12000);
+  }, 15000);
   
   setTimeout(function() {
     document.querySelectorAll('.main-nav li.item6, .main-nav li.item1, .main-nav li.item2, .main-nav li.item3, .main-nav li.item4, .main-nav li.item5').forEach(function(element) {
       element.style.opacity = '0.65';
       element.style.animation = 'none';
     });
-  }, 15500);
+  }, 18500);
 });
 
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
@@ -257,4 +258,3 @@ window.addEventListener('touchmove', (e) => {
 
 // Event listener for touch end (Mobile)
 document.body.addEventListener('touchend', () => updateLastMousePosition(originPosition));
-                         
