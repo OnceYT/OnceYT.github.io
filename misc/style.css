@@ -122,12 +122,12 @@ body {
   position: relative;
   scale: 2;
   top: 170%;
-  opacity: 0;
+  opacity: 1;
   padding: none;
   margin: none;
   height: 300%;
   overflow: hidden;
-  animation: displayIn 1s 11.5s ease-in-out forwards, displayOut 1s 14s ease-in-out forwards;
+  aimation: displayIn 1s 11.5s ease-in-out forwards, displayOut 1s 14s ease-in-out forwards;
 }
 
 #intro-video {
